@@ -1,3 +1,100 @@
+var Characters = {
+  specialCharacters = [
+    '@',
+    '%',
+    '+',
+    '\\',
+    '/',
+    "'",
+    '!',
+    '#',
+    '$',
+    '^',
+    '?',
+    ':',
+    ',',
+    ')',
+    '(',
+    '}',
+    '{',
+    ']',
+    '[',
+    '~',
+    '-',
+    '_',
+    '.'
+  ];
+  numericCharacters = [
+    '0', 
+    '1', 
+    '2', 
+    '3', 
+    '4', 
+    '5', 
+    '6', 
+    '7', 
+    '8', 
+    '9'
+  ];
+  lowerCasedCharacters =  [
+  'a',
+  'b',
+  'c',
+  'd',
+  'e',
+  'f',
+  'g',
+  'h',
+  'i',
+  'j',
+  'k',
+  'l',
+  'm',
+  'n',
+  'o',
+  'p',
+  'q',
+  'r',
+  's',
+  't',
+  'u',
+  'v',
+  'w',
+  'x',
+  'y',
+  'z'
+]
+
+  upperCasedCharacters =   [
+  'A',
+  'B',
+  'C',
+  'D',
+  'E',
+  'F',
+  'G',
+  'H',
+  'I',
+  'J',
+  'K',
+  'L',
+  'M',
+  'N',
+  'O',
+  'P',
+  'Q',
+  'R',
+  'S',
+  'T',
+  'U',
+  'V',
+  'W',
+  'X',
+  'Y',
+  'Z']
+}
+
+
 // Array of special characters to be included in password
 var specialCharacters = [
   '@',
@@ -26,7 +123,18 @@ var specialCharacters = [
 ];
 
 // Array of numeric characters to be included in password
-var numericCharacters = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+var numericCharacters = [
+  '0', 
+  '1', 
+  '2', 
+  '3', 
+  '4', 
+  '5', 
+  '6', 
+  '7', 
+  '8', 
+  '9'
+];
 
 // Array of lowercase characters to be included in password
 var lowerCasedCharacters = [
@@ -88,13 +196,32 @@ var upperCasedCharacters = [
   'Z'
 ];
 
-// Function to prompt user for password options
-function getPasswordOptions() {
+var passwordLength = 0;
+var passwordCharacters
+var upperCaseABC = true;
+var lowerCaseABC = true;
+var specialChar = true;
+var numericChar = true; 
 
+
+// Function to prompt user for password options
+/*function getPasswordOptions() {
+  passwordLength = prompt("Please input desired password length (8-128 characters)");
+  passwordCharacters = prompt("Please input desired characters (special, numeric, lower and upper.")
+}*/
+
+function getPasswordOptions(){
+passwordLength = prompt("Please input desired password length (8-128 characters)");
+upperCaseABC = confirm("Would you like your password to include Upper Case characters?")
+lowerCaseABCCaseABC = confirm("Would you like your password to include Lower Case characters?")
+specialChar = confirm("Would you like your password to include Upper Case characters?")
+numericChar = confirm("Would you like your password to include Upper Case characters?")
 }
+
 
 // Function for getting a random element from an array
 function getRandom(arr) {
+  
 
 }
 
