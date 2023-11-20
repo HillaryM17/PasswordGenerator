@@ -1,5 +1,5 @@
 var Characters = {
-  specialCharacters = [
+  specialCharacters: [
     '@',
     '%',
     '+',
@@ -23,8 +23,8 @@ var Characters = {
     '-',
     '_',
     '.'
-  ];
-  numericCharacters = [
+  ],
+  numericCharacters: [
     '0', 
     '1', 
     '2', 
@@ -35,8 +35,8 @@ var Characters = {
     '7', 
     '8', 
     '9'
-  ];
-  lowerCasedCharacters =  [
+  ],
+  lowerCasedCharacters: [
   'a',
   'b',
   'c',
@@ -63,9 +63,9 @@ var Characters = {
   'x',
   'y',
   'z'
-]
+],
 
-  upperCasedCharacters =   [
+  upperCasedCharacters:  [
   'A',
   'B',
   'C',
@@ -91,7 +91,7 @@ var Characters = {
   'W',
   'X',
   'Y',
-  'Z']
+  'Z'],
 }
 
 
@@ -214,8 +214,8 @@ function getPasswordOptions(){
 passwordLength = prompt("Please input desired password length (8-128 characters)");
 upperCaseABC = confirm("Would you like your password to include Upper Case characters?")
 lowerCaseABCCaseABC = confirm("Would you like your password to include Lower Case characters?")
-specialChar = confirm("Would you like your password to include Upper Case characters?")
-numericChar = confirm("Would you like your password to include Upper Case characters?")
+specialChar = confirm("Would you like your password to include Special Case characters?")
+numericChar = confirm("Would you like your password to include Numeric characters?")
 }
 
 
@@ -243,3 +243,6 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener('click', writePassword);
+
+
+getPasswordOptions()
