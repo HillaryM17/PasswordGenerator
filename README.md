@@ -3,7 +3,7 @@
 This website has been created to provide randomly generated passwords for you to use. It includes options so that you can specify the characters you'd liek to use and how long the password must be. 
 
 
-##Usage:
+## Usage:
 
 [Password-Generator](https://hillarym17.github.io/PasswordGenerator/)
 
